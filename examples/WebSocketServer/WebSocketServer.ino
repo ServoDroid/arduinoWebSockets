@@ -18,7 +18,7 @@ WebSocketsServer webSocket = WebSocketsServer(81);
 
 #define USE_SERIAL Serial1
 
-void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght) {
+void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length) {
 
     switch(type) {
         case WStype_DISCONNECTED:
